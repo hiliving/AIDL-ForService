@@ -9,6 +9,5 @@
 * 绑定服务，启动新进程
 
 效果图如下：
-<table>
-  <td><img src="https://github.com/hiliving/AIDL-ForService/blob/master/screen.gif" width = "240" height = "400" alt="图片名称" align=center />
- </table>
+
+ ![aidl-service](https://github.com/hiliving/AIDL-ForService/blob/master/screen.gif)
