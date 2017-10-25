@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hiliving.dev.com.aidl_services.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="启动服务，运行在新的进程"
+        android:id="@+id/btbind"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新进程状态：停止"
+        android:textSize="20sp"
+        android:textColor="#fd4502"
+        android:layout_margin="20dp"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收服务进程信息："
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textView"
+        android:id="@+id/txmsg" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收服务进程信息："
+        android:layout_margin="20dp"
+        android:layout_below="@+id/txmsg"
+        android:id="@+id/txparcemsg" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始录制"
+        android:id="@+id/start"
+        android:layout_marginEnd="41dp"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_alignEnd="@+id/btbind" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="先点此启动服务按钮，然后进行其他操作"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止录制"
+        android:id="@+id/stop"
+        android:layout_marginStart="15dp"
+        android:layout_above="@+id/btbind"
+        android:layout_toEndOf="@+id/btbind"
+        android:layout_marginBottom="128dp" />
+</RelativeLayout>
